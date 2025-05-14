@@ -1,37 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #F8F7F4;
+}
+
 .head-foot {
-    border-radius: 15px;
-    width: 100%;
     height: 100px;
-    background-color: #6096B4;
+    margin: 20px;
+    background-color: #D6D2CD;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    font-family: 'Arial', sans-serif;
 }
 
 .sticky-header {
+    margin: 0px;
     position: sticky;
-    top: 0;
+    top: 0px;
     z-index: 1000;
-    
 }
 
-.nav li {
-    display: inline-block;
-    margin: 0 20px;
-    text-decoration: none;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 5%;
+}
 
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #111111;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+    background-color: #F8F7F4;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #BFB8AF;
+    color: #F8F7F4;
+    transform: scale(1.2);
 }
 
 .logo {
     font-size: 24px;
     color: white;
-    margin-left: 20px;
 }
 
 .news {
-    background-color: #EEE9DA;
+    background-color: #EEDDD3;
     padding: 20px;
     border-radius: 15px;
     margin: 20px;
@@ -41,35 +79,25 @@
     height: 100px;
 }
 
-.news-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.button {
-    background-color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 15px;
-    text-decoration: none;
-    color: black;
-    transition: background-color 0.2s, color 0.2s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 1px solid #6096B4;
-}
-
-.button:hover {
-    background-color: #7ab1ce;
-    color: white;
-}
-
-.button-container {
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.button-container .button {
+    display: inline-block;
+    background-color: #A89F91;
+    color: #F8F7F4;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button-container .button:hover {
+    transform: scale(1.2);
+    background-color: #BFB8AF;
 }
