@@ -6,7 +6,6 @@ body {
 }
 
 .head-foot {
-    height: 100px;
     margin: 20px;
     background-color: #D6D2CD;
     display: flex;
@@ -20,6 +19,7 @@ body {
     position: sticky;
     top: 0px;
     z-index: 1000;
+    padding: 10px 0;
 }
 
 .header-container {
@@ -28,7 +28,19 @@ body {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    padding: 0 5%;
+    padding: 0 5vw;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+}
+
+.logo-img {
+    width: 10vW;
+    height: auto;
+    max-width: 150px;
+    min-width: 90px
 }
 
 .nav {
@@ -49,23 +61,35 @@ body {
     text-decoration: none;
     color: #111111;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: clamp(10px, 2vh, 16px) 1vw;
+    font-size: clamp(16px, 1.5vw, 25px);
     border-radius: 20px;
-    margin: 0 10px;
-    transition: background-color 0.3s ease;
+    margin: 0 1vw;
     background-color: #F8F7F4;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.button-container .button {
+    font-size: clamp(16px, 1.5vw, 25px);
+    display: inline-block;
+    background-color: #A89F91;
+    color: #F8F7F4;
+    padding: clamp(10px, 2vh, 16px) 1vw;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button-container .button:hover {
+    transform: scale(1.2);
+    background-color: #BFB8AF;
 }
 
 .nav a:hover {
     background-color: #BFB8AF;
     color: #F8F7F4;
     transform: scale(1.2);
-}
-
-.logo {
-    font-size: 24px;
-    color: white;
 }
 
 .news {
@@ -86,18 +110,3 @@ body {
     flex-direction: column;
 }
 
-.button-container .button {
-    display: inline-block;
-    background-color: #A89F91;
-    color: #F8F7F4;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.button-container .button:hover {
-    transform: scale(1.2);
-    background-color: #BFB8AF;
-}
