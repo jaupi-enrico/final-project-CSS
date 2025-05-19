@@ -1,0 +1,10 @@
+.immagini {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-top: 20px;
+    width: 250px;
+    height: auto;
+    flex-direction: row;
+    
+}
