@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival della moda</title>
     <link rel="stylesheet" type="text/css" href="style.css" >
-    <link rel="stylesheet" type="text/css" href="style_index.css" >
+    <link rel="stylesheet" type="text/css" href="style_acquisto.css" >
 </head>
 <body style="background-color: #F8F7F4;">
     <header class="head-foot sticky-header">
@@ -28,9 +28,63 @@
         </div>
     </header>
     <main class="main-container">
-        <article class="news"></article>
-        <article class="news"></article>
-        <article class="news"></article>
+
+        <h2 class="title">Acquisto biglietto</h2>
+
+        <div class="form-container">
+            <form class="ticket-form">
+                <div class="name-container">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="surname-container">
+                    <label for="surname">Cognome:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="email-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="phone-container">
+                    <label for="phone">Telefono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="payment-container">
+                    <label for="payment">Metodo di pagamento:</label>
+                    <select id="payment" name="payment">
+                        <option value="credit-card">Carta di credito</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank-transfer">Bonifico bancario</option>
+                    </select>
+                </div>
+                
+                <div class="ticket-type">
+                    <label for="ticket-type">Tipo di biglietto:</label>
+                    <select id="ticket-type" name="ticket-type">
+                        <option value="visitator">Visitatore</option>
+                        <option value="vip">Vip</option>
+                    </select>
+                    <select id="ticket-type" name="ticket-type">
+                        <option value="morning">Mattino</option>
+                        <option value="afternoon">Pomeriggio</option>
+                        <option value="full-day">Intera giornata</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        
+        <input type="checkbox" id="formTrigger" hidden>
+
+        <label for="formTrigger" class="fake-button">Acquista</label>
+        <div class="confirmation-popup" id="confirmationPopup">
+            <h2>Acquisto completato!</h2>
+            <p>Grazie per aver acquistato il tuo biglietto. Riceverai un'email di conferma a breve.</p>
+            <p>Per qualsiasi domanda, non esitare a contattarci.</p>
+            <p>Ci vediamo al festival!</p>
+            <a href="index.html" class="button">Torna alla home</a>
+        </div>
     </main>
     <footer class="head-foot"></footer>
 </body>
