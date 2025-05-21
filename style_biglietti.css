@@ -41,7 +41,7 @@
     width: 0px;
     height: 1px;
     display: block;
-    background: black;
+    background: white;
     transition: 300ms;        
 }
 
@@ -71,7 +71,7 @@
     width: 100%;
     text-align: center;
     font-size: 3vw;
-    scroll-margin-top: 400px;
+    scroll-margin-top: 150px;
 }
 
 .img-container {
@@ -127,7 +127,7 @@
     font-weight: bold;
     font-size: 2vw;
     border-radius: 20px;
-    background-color: gray;
+    background-color: #A89F91;
     transition: background-color 0.3s ease;
 }
 
@@ -147,4 +147,10 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 2vh calc(10vw / 2);
+}
+
+.tickets-button:hover{
+    transform: scale(1.2);
+    background-color: #D6D2CD;
+    color: #F8F7F4;
 }
