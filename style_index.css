@@ -73,6 +73,7 @@
 .news-item {
     background-color: #f9f9f9;
     width: 25vw;
+    max-width: 600px;
     margin: 0.5vw;
     padding: 1vw;
     border: 1px solid #ccc;
