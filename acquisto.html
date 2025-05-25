@@ -5,84 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival della moda</title>
     <link rel="stylesheet" type="text/css" href="style_header.css" >
-    <link rel="stylesheet" type="text/css" href="style_acquisto.css" >
+    <link rel="stylesheet" type="text/css" href="style_acquisto.css">
+    <link rel="stylesheet" type="text/css" href="style_footer.css">
+    <link rel="stylesheet" type="text/css" href="style_global.css">
 </head>
 <body style="background-color: #F8F7F4;">
-    <header class="head-foot sticky-header">
-        <div class="header-container">
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo" class="logo-img">
+    <div class="body-container">
+        <header class="head-foot sticky-header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo" class="logo-img">
+                </div>
+                <div class="nav-container">
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="giornate.html">Giornate</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="button-container">
+                    <a class="button" href="biglietti.html">Acquista biglietto</a>
+                </div>
             </div>
-            <div class="nav-container">
-                <nav>
-                    <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="giornate.html">Giornate</a></li>
-                    </ul>
-                </nav>
+        </header>
+        <main class="main-container">
+            <h2 class="title">Acquisto Biglietti</h2>
+            <div class="form-container">
+            <form class="ticket-form">
+                <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                <label for="surname">Cognome:</label>
+                <input type="text" id="surname" name="surname" required />
+                </div>
+                <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                <label for="phone">Telefono:</label>
+                <input type="tel" id="phone" name="phone" required />
+                </div>
+                <div class="form-group">
+                <label for="payment">Metodo di pagamento:</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit-card">Carta di credito</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                </div>
+                <div class="form-group">
+                <label for="ticket-role">Tipo di biglietto:</label>
+                <select id="ticket-role" name="ticket-role" required>
+                    <option value="visitator">Visitatore</option>
+                    <option value="vip">VIP</option>
+                </select>
+                </div>
+                <div class="form-group">
+                <label for="ticket-time">Fascia oraria:</label>
+                <select id="ticket-time" name="ticket-time" required>
+                    <option value="morning">Mattino</option>
+                    <option value="afternoon">Pomeriggio</option>
+                    <option value="full-day">Intera giornata</option>
+                </select>
+                </div>
+            </form>
             </div>
-            
-            <div class="button-container">
-                <a class="button" href="biglietti.html">Acquista biglietto</a>
-            </div>
-        </div>
-    </header>
-    <main class="main-container">
-        <h2 class="title">Acquisto Biglietti</h2>
-        <div class="form-container">
-        <form class="ticket-form">
-            <div class="form-group">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-            <label for="surname">Cognome:</label>
-            <input type="text" id="surname" name="surname" required />
-            </div>
-            <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-            <label for="phone">Telefono:</label>
-            <input type="tel" id="phone" name="phone" required />
-            </div>
-            <div class="form-group">
-            <label for="payment">Metodo di pagamento:</label>
-            <select id="payment" name="payment" required>
-                <option value="credit-card">Carta di credito</option>
-                <option value="paypal">PayPal</option>
-            </select>
-            </div>
-            <div class="form-group">
-            <label for="ticket-role">Tipo di biglietto:</label>
-            <select id="ticket-role" name="ticket-role" required>
-                <option value="visitator">Visitatore</option>
-                <option value="vip">VIP</option>
-            </select>
-            </div>
-            <div class="form-group">
-            <label for="ticket-time">Fascia oraria:</label>
-            <select id="ticket-time" name="ticket-time" required>
-                <option value="morning">Mattino</option>
-                <option value="afternoon">Pomeriggio</option>
-                <option value="full-day">Intera giornata</option>
-            </select>
-            </div>
-        </form>
-        </div>
 
-        <input type="checkbox" id="formTrigger" hidden />
-        <label for="formTrigger" class="fake-button">Acquista</label>
+            <input type="checkbox" id="formTrigger" hidden />
+            <label for="formTrigger" class="fake-button">Acquista</label>
 
-        <div class="confirmation-popup" id="confirmationPopup">
-        <h2>Acquisto completato!</h2>
-        <p>Grazie per aver acquistato il tuo biglietto. Riceverai un'email di conferma a breve.</p>
-        <p>Per qualsiasi domanda, non esitare a contattarci.</p>
-        <p>Ci vediamo al festival!</p>
-        <label for="formTrigger" class="fake-button">Continua</label>
-        </div>
-    </main>
-    <footer class="head-foot"></footer>
+            <div class="confirmation-popup" id="confirmationPopup">
+            <h2>Acquisto completato!</h2>
+            <p>Grazie per aver acquistato il tuo biglietto. Riceverai un'email di conferma per il pagamentoa breve.</p>
+            <p>Per qualsiasi domanda, non esitare a contattarci.</p>
+            <p>Ci vediamo al festival!</p>
+            <label for="formTrigger" class="fake-button">Continua</label>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Festival della Moda</h2>
+                    <p>Innovazione, semplicità e connessione.</p>
+                    <p>&copy; 2025 FestivalModa. Tutti i diritti riservati.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div>
+                        <h4>Esplora</h4>
+                        <div class="links">
+                            <a href="#">Home</a>
+                            <a href="#">Giornate</a>
+                            <a href="#">Biglietti</a>
+                        </div>
+                    </div>
+                    <div class="social-container">
+                        <h4>Seguici</h4>
+                        <div class="footer-links-section">
+                            <div class="links">
+                                <a href="https://instagram.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/Instagram.png" alt="Instagram"> 
+                                    Instagram
+                                </a>
+                                <a href="https://facebook.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/Facebook.png" alt="Facebook"> 
+                                    Facebook
+                                </a>
+                                <a href="https://tiktok.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/tiktok.png" alt="TikTok"> 
+                                    TikTok
+                                </a>
+                            </div>
+                            <div class="links">
+                                <a href="https://twitch.tv" target="_blank">
+                                    <img class="site-logo" src="img/footer/twitch.png" alt="Twitch"> 
+                                    Twitch
+                                </a>
+                                <a href="https://x.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/Twitter-X.png" alt="Twitter"> 
+                                    Twitter
+                                </a>
+                                <a href="https://youtube.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/youtube.png" alt="YouTube"> 
+                                    YouTube
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
