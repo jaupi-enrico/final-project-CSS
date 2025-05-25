@@ -1,11 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #F8F7F4;
-}
-
-.head-foot {
+header {
     margin: 20px;
     background-color: #D6D2CD;
     display: flex;
@@ -90,17 +83,6 @@ body {
     background-color: #BFB8AF;
     color: #F8F7F4;
     transform: scale(1.2);
-}
-
-.news {
-    background-color: #EEDDD3;
-    padding: 20px;
-    border-radius: 15px;
-    margin: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    max-width: 1000px;
-    height: 100px;
 }
 
 .main-container {

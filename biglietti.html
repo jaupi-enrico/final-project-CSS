@@ -4,34 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival della moda</title>
-    <link rel="stylesheet" type="text/css" href="style.css" >
-    <link rel="stylesheet" type="text/css" href="style_index.css" >
+    <link rel="stylesheet" type="text/css" href="style_header.css" >
+    <link rel="stylesheet" type="text/css" href="style_biglietti.css">
+    <link rel="stylesheet" type="text/css" href="style_footer.css">
+    <link rel="stylesheet" type="text/css" href="style_global.css">
 </head>
 <body style="background-color: #F8F7F4;">
-    <header class="head-foot sticky-header">
-        <div class="header-container">
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo" class="logo-img">
+    <div class="body-container">
+        <header class="head-foot sticky-header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo" class="logo-img">
+                </div>
+                <div class="nav-container">
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="giornate.html">Giornate</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="button-container">
+                    <a class="button" href="biglietti.html">Acquista biglietto</a>
+                </div>
             </div>
-            <div class="nav-container">
-                <nav>
-                    <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="giornate.html">Giornate</a></li>
-                    </ul>
-                </nav>
+        </header>
+        <main class="main-container">
+            <h2 class="title">Biglietti disponibili</h2>
+            <div class="type-container">
+                <ul class="type">
+                    <li><a href="#visitor">Visitatori</a></li>
+                    <li><a href="#vip">Vip</a></li>
+                </ul>
             </div>
-            
-            <div class="button-container">
-                <a class="button" href="biglietti.html">Acquista biglietto</a>
+
+            <hr class="divisor">
+            <div class="tickets-type">
+                <div class="visitor-tickets">
+                    <div class="tickets-container">
+                        <h2 id="visitor" class="tickets-title">Visitatori</h2>
+                        <div class="ticket">
+                            <div class="ticket-content">
+                                <h3 class="price">10€</h3>
+                                <p class="ticket-description">Mattino</p>
+                            </div>
+                        </div>
+                        <div class="ticket">
+                            <div class="ticket-content">
+                                <h3 class="price">15€</h3>
+                                <p class="ticket-description">Pomeriggio</p>
+                            </div>
+                        </div>
+                        <div class="ticket">
+                            <div class="ticket-content">
+                                <h3 class="price">20€</h3>
+                                <p class="ticket-description">Intera giornata</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/biglietti/img1.jpg" alt="" class="img">
+                    </div>
+                </div>
+                <div class="vip-tickets">
+                    <div class="img-container">
+                        <img src="img/biglietti/img2.jpg" alt="" class="img">
+                    </div>
+                    <div class="tickets-container">
+                        <h2 id="vip" class="tickets-title">Vip</h2>
+                        <div class="ticket">
+                            <div class="ticket-content">
+                                <h3 class="price">3€</h3>
+                                <p class="ticket-description">Mattino</p>
+                            </div>
+                            
+                        </div>
+                        <div class="ticket">
+                            <div class="ticket-content">
+                                <h3 class="price">4€</h3>
+                                <p class="ticket-description">Pomeriggio</p>
+                            </div>
+                            
+                        </div>
+                        <div class="ticket">
+                            <div class="ticket-content">
+                                <h3 class="price">5€</h3>
+                                <p class="ticket-description">Intera giornata</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-        </div>
-    </header>
-    <main class="main-container">
-        <article class="news"></article>
-        <article class="news"></article>
-        <article class="news"></article>
-    </main>
-    <footer class="head-foot"></footer>
+            <hr class="divisor">
+            <div class="tickets-button-container">
+                <a class="tickets-button" href="acquisto.html">Scegli biglietto</a>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Festival della Moda</h2>
+                    <p>Innovazione, semplicità e connessione.</p>
+                    <p>&copy; 2025 FestivalModa. Tutti i diritti riservati.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div>
+                        <h4>Esplora</h4>
+                        <div class="links">
+                            <a href="#">Home</a>
+                            <a href="#">Giornate</a>
+                            <a href="#">Biglietti</a>
+                        </div>
+                    </div>
+                    <div class="social-container">
+                        <h4>Seguici</h4>
+                        <div class="footer-links-section">
+                            <div class="links">
+                                <a href="https://instagram.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/Instagram.png" alt="Instagram"> 
+                                    Instagram
+                                </a>
+                                <a href="https://facebook.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/Facebook.png" alt="Facebook"> 
+                                    Facebook
+                                </a>
+                                <a href="https://tiktok.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/tiktok.png" alt="TikTok"> 
+                                    TikTok
+                                </a>
+                            </div>
+                            <div class="links">
+                                <a href="https://twitch.tv" target="_blank">
+                                    <img class="site-logo" src="img/footer/twitch.png" alt="Twitch"> 
+                                    Twitch
+                                </a>
+                                <a href="https://x.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/Twitter-X.png" alt="Twitter"> 
+                                    Twitter
+                                </a>
+                                <a href="https://youtube.com" target="_blank">
+                                    <img class="site-logo" src="img/footer/youtube.png" alt="YouTube"> 
+                                    YouTube
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
 </body>
 </html>
