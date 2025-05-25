@@ -1,9 +1,9 @@
 .festival-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
-  padding: 40px 40px 40px 80px;
+  padding: 40px;
 }
 
 .giornata {
@@ -11,6 +11,7 @@
   align-items: center;
   width: 500px;
   height: 260px;
+  object-fit: cover;
   overflow: hidden;
   background-color: #D6D2CD;
   border-radius: 12px;
@@ -21,7 +22,7 @@
 }
 
 .giornata:hover {
-  width: 1200px; /* espansione orizzontale */
+  width: 1200px; 
 }
 
 .giornata-img {
@@ -30,12 +31,13 @@
   object-fit: cover;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
+  flex-shrink: 0;
 }
 
 .descrizione {
   padding: 20px;
   font-size: 1.4em;
-  line-height: 1.5;
+  line-height: 1;
   flex-grow: 1;
   overflow: hidden;
   display: flex;
@@ -47,7 +49,7 @@
 .attivita {
   position: absolute;
   top: 50%;
-  left: 820px; /* posizionamento fisso all'interno del riquadro espanso */
+  left: 820px; 
   transform: translateY(-50%);
   font-size: 1.4em;
   color: #000;
