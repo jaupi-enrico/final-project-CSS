@@ -1,5 +1,4 @@
 header {
-    margin: 20px;
     background-color: #D6D2CD;
     display: flex;
     align-items: center;
@@ -8,9 +7,9 @@ header {
 }
 
 .sticky-header {
-    margin: 0px;
+    margin: 0;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 1000;
     padding: 10px 0;
 }

@@ -1,22 +1,21 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #F8F7F4;
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', sans-serif;
+	background-color: #F8F7F4;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .body-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 .main-container {
-  flex: 1;
+	flex: 1;
 }
