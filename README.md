@@ -34,4 +34,4 @@ e visitare `http://localhost:8000`.
 
 ## Licenza
 
-Questo progetto è distribuito sotto licenza `LICENSE`.
+Questo progetto è distribuito sotto licenza **MIT** (vedi file `LICENSE`).
